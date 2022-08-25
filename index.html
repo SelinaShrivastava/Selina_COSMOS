@@ -9,17 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <nav class="navbar navbar-dark bg-dark shadow fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="mit logo.png" alt="" width="110" height="50" class="d-inline-block text-light align-text-center logo">
         COSMOS
       </a>
-      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
 
@@ -30,7 +32,7 @@
 </div>
 
 <div class="About">
-<h3 class="text-center ">About the Club</h3>
+<h3 class="text-center text-decoration-underline">About the Club</h3>
 <div class="about_content text-center">
     COSMOS is the official astronomy club of MIT-WPU
 </div>
@@ -61,27 +63,34 @@
 </div>
 
 <div class="form ">
-<div class="title text-center mb-3 mt-5 text-decoration-underline">
+<div class="title text-center mb-5 mt-5 text-decoration-underline">
   <h2>Registration Form</h2>
 </div>
-  <div class="mb-3 text-center col-md-6 Name">
+  <div class="mb-3 text-center col-md-4 Name">
     <label for="name" class="form-label">Name</label>
     <input type="text" class="form-control" id="name" >
   </div>
-  <div class="mb-3 text-center col-md-6 Branch">
+  <div class="mb-3 text-center col-md-4 Branch">
     <label for="branch" class="form-label">Branch</label>
     <input type="text" class="form-control" id="branch">
   </div>
-<div class="mb-3 text-center col-md-6 prn">
+<div class="mb-3 text-center col-md-4 prn">
   <label for="PRN" class="form-label">PRN</label>
   <input type="text" class="form-control" id="PRN">
 </div>
-<select class="form-select text-center role mb-5" aria-label="Default select example">
+<div class="mb-5 col-md-4 text-center mail">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="select col-md-6 text-center role">
+<select class="form-select text-center role mb-5 col-md-4" aria-label="Default select example">
   <option selected>Select the role you wish to apply for</option>
   <option value="1">Graphic Designer</option>
   <option value="2">Video Editor</option>
   <option value="3">Web Designer</option>
-</select>
+</select></div>
+<div class="Submit">
+<input class="btn btn-primary mb-3 " type="submit" value="Submit"></div>
 </div>
 
 <div class="footer text-light text-center ">
@@ -91,3 +100,4 @@
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
